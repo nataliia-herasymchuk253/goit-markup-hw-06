@@ -36,21 +36,44 @@
         <li class="contacts-item"><a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
      </ul>
      </address>
+     <button class="burger-btn" type="button">
+        <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger">
+            </use>
+        </svg>
+
+     </button>
        </div>
+       
+       <div class="mobile-menu is-open"> 
+         <div class="container mobile-menu-container">
+         <button class="mobile-menu-close">Close</button>
+         <nav class="mobile-menu-nav">Navigation</nav>
+         <address>Address</address>
+         <ul class="">
+            <li>
+
+            </li>
+         </ul>
         
+        </div>
+       </div>
+
+
     </header>
     <main>
 
 <!----section 1-->
-    <section class="hero">
+    <section class="hero hidden">
         <div class="container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
                 <button class="form-button style-button" type="button">Order Service</button>
         </div>
    </section>
 
-    <!---section 2 -->
-<section class="feature">
+
+    <!--- section 2 -->
+<section class="feature hidden">
    <div class="container">
 <h2 class="visually-hidden">content</h2>
 
@@ -122,9 +145,11 @@
    </div>
   
 </section>
-<!------section 3---->
 
-<section class="section-team">
+
+<!------section 3 ---->
+
+<section class="section-team  hidden">
     <div class="container">
 
 <h2 class="section-title">Our Team</h2>
@@ -261,9 +286,11 @@
     </div>
    
 </section>
-<!--------section 4--------->
 
-<section class="portfolio">
+
+<!--------section 4 --------->
+
+<section class="portfolio hidden">
 
     <div class="container">
 <h2 class="section-title">Our Portfolio</h2>
@@ -367,8 +394,10 @@
 </section>
 
     </main>
+    
+    <!---foter -->
  
-    <footer class="page-footer">
+    <footer class="page-footer  hidden">
          
         <div class="footer-container container">
 
@@ -435,7 +464,9 @@
     
     </footer>
 
-    <div class="backdrop is-open">
+    
+ <!---- modal -->.
+    <div class="backdrop is-open hidden">
         <div class="modal">
             <button class="modal-open" type="button">
                 <svg class="modal-open-icon" width="8" height="8">

@@ -2,11 +2,6 @@
 font-family: "Roboto", sans-serif;*/
  
 
-   .footer-container {
-    display: flex;
-    align-items: baseline;
-    
-   }
 
 
 /* ------ style for header------*/
@@ -20,7 +15,11 @@ font-family: "Roboto", sans-serif;*/
 }
 
 
-
+    .footer-container {
+      display: flex;
+      align-items: baseline;
+  
+    }
  
  .footer-logo {
   margin-bottom: 16px;

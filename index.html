@@ -68,11 +68,11 @@
 
                 </a>
             </li>
-                <li>
+                <li class="mobile-menu-item">
                     <a class="mobile-nav-link-color mobile-nav-link" href="./index.html">Portfolio
 
                 </a></li>
-                <li>
+                <li class="mobile-menu-item">
                     <a class="mobile-nav-link-color mobile-nav-link" href="./index.html">Contacts
 
                 </a></li>
@@ -371,7 +371,31 @@
 <ul class="card-portfolio">
     <li class="portfolio-item">
         <div class="portfolio-cover">
-            <img class="card-photo" src="./images/img5.jpg" alt="Banking App" width="360" />
+            <picture>
+                <source 
+                 srcset="./images/portfolio-img-desck1x.jpg 1x,
+                         ./images/portfolio-img-desck2x.jpg 2x 
+                         "
+                         media="(min-width:1158px)"
+                        />
+                <source
+                 srcset="./images/portfolio-img-tab1x.jpg 1x,
+                         ./images/portfolio-img-tab2x.jpg 2x
+                         "
+                         media="(min-width:768px)"
+                        />
+                <source
+                 srcset="./images/portfolio-img-mob1x.jpg 1x,
+                         ./images/portfolio-img-mob2x.jpg 2x
+                         "
+                         media="(max-width: 767px)"
+                         />
+            <img class="card-photo" 
+            src="./images/img5.jpg" 
+            alt="Banking App" width="360"
+             />
+            </picture>
+           
             <p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
             Fruit Ecommerce App ·
             Cloud Storage App
@@ -540,7 +564,7 @@
 
     
  <!---- modal -->.
-    <div class="backdrop is-open hidden">
+    <div class="backdrop">
         <div class="modal">
             <button class="modal-open" type="button">
                 <svg class="modal-open-icon" width="8" height="8">
@@ -618,12 +642,17 @@
                         <use href="./images/icons.svg#icon-check"></use>
                      </svg>
                         </span>
-                        I accept the terms and conditions of the
-                        <a class="checkbox-link" href="">Privacy Policy</a>
-                    </label>
+
+
+                        <span class="checkbox-text">
+      I accept the terms and conditions of the
+      <a class="checkbox-link" href="">Privacy Policy</a>
+                        </span>
+
+                        </label>
                 </div>
 
-                <button type="submit" class="submit-btm" >Send</button>
+                <button type="submit" class="submit-btn" >Send</button>
                  </form>
             </div>
         

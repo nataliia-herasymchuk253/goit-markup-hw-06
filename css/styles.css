@@ -943,7 +943,7 @@
     flex-direction: row;
     justify-content: flex-start;
     
-    gap: 72px;
+    gap: 72px 24px;
  }
  .social-media-title {
     display: block;

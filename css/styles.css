@@ -431,19 +431,19 @@
  @media screen and (min-width: 768px) {
  .hero-title {
  max-width: 496px;
-  
+ margin-bottom: 36px;
   font-size: 56px;
-
-  
   font-weight: 700;
    }
 
    .hero {
+    padding: 112px 0;
+
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
         url(../images/hero-bg-tab.jpg);
-    padding: 112px 0;
+    
    }
  @media (min-resolution: 192dpi){
     .hero {
@@ -522,18 +522,30 @@
 
 
  @media screen and (min-width: 768px) {
+ .feature-list {
+ gap: 24px;
+ }
+
 .feature-item {
  width: calc((100% - 24px) / 2);
  margin: 0;
- gap: 24px 72px;
+ 
     }
 .feature-subtitle {
+    
     text-align: left;
 }
  }
 
 
  @media screen and (min-width: 1158px) {
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+        gap: 24px;
+    }
+
+
 .feature-icon {
  display: flex;
  align-items: center;
@@ -554,9 +566,7 @@
  .feature-item {
     width: calc((100% - 72px) / 4);
  }
- .feature-list {
-    gap: 24px;
- }
+ 
  }
 
   /*  Section 3  */
@@ -656,17 +666,11 @@
 .card-list {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 72px 24px;
     
-    
-    
-}
-/*.card-item {
-gap: 24px 64px;
-padding-left: 108px;
-padding-right: 108px;
-}*/
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1157px) {
 .team-container {
@@ -697,8 +701,11 @@ padding-right: 108px;
  }
  .card-portfolio {
     
-     column-gap: 24px;
-     row-gap: 48px;
+     /*column-gap: 24px;
+     row-gap: 48px;*/
+     display: flex;
+     flex-wrap: wrap;
+     gap: 48px;
  }
 
   .portfolio-cover {
@@ -785,9 +792,8 @@ padding-right: 108px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center; 
     flex-direction: row;
-    justify-content: flex-start;
+    
     gap: 72px;
   
 
@@ -930,18 +936,36 @@ padding-right: 108px;
   }
 
   @media screen and (min-width: 768px) {
-.subscribe-input {
+ .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    gap: 72px;
+ }
+ .social-media-title {
+    display: block;
+ }
+
+    .subscribe-input {
         width: 264px;
 }
-.subscribe-title {
+ .subscribe-title {
     text-align: left;
 }
+ 
 .footer-social {
     text-align: left;
+    
+   
 }
 
-.footer-box {
+ .footer-box {
     text-align: left;
+
+    
   }
   @media screen and (min-width: 768px) and (max-width: 1157px) {
     .footer-container {
